@@ -15,6 +15,7 @@ class App extends React.Component {
         randomQuestionNumber: 0,
         quantityAnswer:0,
         userAnswer: null,
+        answerStatus: false,
            };
 
  componentDidMount() {
@@ -30,12 +31,14 @@ class App extends React.Component {
 
     nextLevel= ()=> {
         if (this.state.numberOfLevel >= birdsData[this.state.numberOfLevel].length-1  ) {
-            alert ("you is winner, game is over")
+            alert ("you is winner, game is over");
+            this.setState({answerStatus: true});
         }
         else {
-            this.setState({numberOfLevel: this.state.numberOfLevel + 1})
-            this.setState({quantityAnswer: 0})
-            this.setState({userAnswer: null})
+            this.setState({numberOfLevel: this.state.numberOfLevel + 1});
+            this.setState({quantityAnswer: 0});
+            this.setState({userAnswer: null});
+            this.setState({answerStatus: false});
             this.start()
         }
                    };
@@ -51,6 +54,7 @@ class App extends React.Component {
 
         if (this.state.randomQuestionNumber == this.state.userAnswer) {
 
+            this.setState({answerStatus: true});
             this.setState({score: this.state.score+bonus});
 
             // then -->  ring bell + next level is active !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -81,17 +85,19 @@ render = () => {
 
 
                     <QuestionBlock
-                        userAnswer={this.state.userAnswer}
+                        answerStatus={this.state.answerStatus}
                         nameBird={birdsData[this.state.numberOfLevel][this.state.randomQuestionNumber].name}
                         imgBird={birdsData[this.state.numberOfLevel][this.state.randomQuestionNumber].image}
                         audioBird={birdsData[this.state.numberOfLevel][this.state.randomQuestionNumber].audio}
                     />
 
-                    <div className="answerAndDescr">
 
+
+                    <div className="answerAndDescr">
                             <AnswerBlock
                                  ArrayBird={ArrayBird}
                                  userAnswer={this.userAnswer}
+                                 answerStatus={this.state.answerStatus}
                             />
 
                             { (this.state.userAnswer) ?
