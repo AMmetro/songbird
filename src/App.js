@@ -44,7 +44,7 @@ class App extends React.Component {
                    };
 
 
-    userAnswer=(e)=> {
+    makeAnswer=(e)=> {
             this.setState({userAnswer: e}, this.checkAnswer)
     };
 
@@ -96,8 +96,8 @@ render = () => {
                     <div className="answerAndDescr">
                             <AnswerBlock
                                  ArrayBird={ArrayBird}
-                                 userAnswer={this.userAnswer}
-                                 answerStatus={this.state.answerStatus}
+                                 makeAnswer={this.makeAnswer}
+                                 userAnswer={this.state.userAnswer}
                             />
 
                             { (this.state.userAnswer) ?
