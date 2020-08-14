@@ -49,20 +49,15 @@ class App extends React.Component {
     checkAnswer = () => {
 
         let bonus = 5 - this.state.quantityAnswer;
-
         if (this.state.randomQuestionNumber == this.state.userAnswer) {
-
             this.setState({answerStatus: true});
             this.setState({score: this.state.score + bonus});
-
             // then -->  ring bell + next level is active !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
             alert("win " + this.state.randomQuestionNumber + this.state.userAnswer)
         } else {
             alert("NOT " + this.state.randomQuestionNumber + this.state.userAnswer)
         }
-
         this.setState({quantityAnswer: this.state.quantityAnswer + 1});
-
     }
 
 
@@ -70,25 +65,30 @@ class App extends React.Component {
 
         let ArrayBird = birdsData[this.state.numberOfLevel];
 
+
+
         return (
 
 
             <div className="App">
 
+
+                <div className={"mainWrapper"}>
+
                 <div>
-                <Header
-                    numberOfLevel={this.state.numberOfLevel}
-                    score={this.state.score}                 />
+                        <Header
+                            numberOfLevel={this.state.numberOfLevel}
+                            score={this.state.score}                 />
                 </div>
 
-                     <div>
-                <QuestionBlock
-                    answerStatus={this.state.answerStatus}
-                    nameBird={birdsData[this.state.numberOfLevel][this.state.randomQuestionNumber].name}
-                    imgBird={birdsData[this.state.numberOfLevel][this.state.randomQuestionNumber].image}
-                    audioBird={birdsData[this.state.numberOfLevel][this.state.randomQuestionNumber].audio}
-                />
-                     </div>
+                <div>
+                        <QuestionBlock
+                            answerStatus={this.state.answerStatus}
+                            nameBird={birdsData[this.state.numberOfLevel][this.state.randomQuestionNumber].name}
+                            imgBird={birdsData[this.state.numberOfLevel][this.state.randomQuestionNumber].image}
+                            audioBird={birdsData[this.state.numberOfLevel][this.state.randomQuestionNumber].audio}
+                        />
+                 </div>
 
 
                 <div className="answerAndDescr">
@@ -96,6 +96,7 @@ class App extends React.Component {
                         ArrayBird={ArrayBird}
                         makeAnswer={this.makeAnswer}
                         userAnswer={this.state.userAnswer}
+                        answerStatus={this.state.answerStatus}
                     />
 
                     {(this.state.userAnswer) ?
@@ -106,9 +107,11 @@ class App extends React.Component {
                         <EmptyDescriptionBlock/>}
                 </div>
 
-                <button onClick={this.nextLevel}>next level</button>
 
 
+                <button className={"nextLevelButton"} onClick={this.nextLevel} >next level</button>
+
+                </div>
             </div>
         );
     }
