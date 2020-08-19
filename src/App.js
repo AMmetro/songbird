@@ -16,17 +16,31 @@ class App extends React.Component {
         quantityAnswer: 0,
         userAnswer: null,
         answerStatus: false,
+        birdData:[]
     };
 
+    options = [
+        {style: "style1", checked: false},
+        {style: "style2", checked: false},
+        {style: "style3", checked: false},
+        {style: "style4", checked: false},
+        {style: "style5", checked: false},
+        {style: "style6", checked: false}   ];
+
+
     componentDidMount() {
-        this.start()
-    }
+        this.start();
+        let tempBirdData = birdsData[this.state.numberOfLevel].map((element, index) => {
+            return {...element, ...this.options[index]}
+        });
+        this.setState({birdData: tempBirdData});
+        alert ("didmountwork")
+       }
 
     start = () => {
         let randomNumber = Math.floor(Math.random() * birdsData[this.state.numberOfLevel].length);
         this.setState({randomQuestionNumber: randomNumber});
     };
-
 
     nextLevel = () => {
         if (this.state.numberOfLevel >= birdsData[this.state.numberOfLevel].length - 1) {
@@ -37,17 +51,23 @@ class App extends React.Component {
             this.setState({quantityAnswer: 0});
             this.setState({userAnswer: null});
             this.setState({answerStatus: false});
-            this.start()
-        }
-    };
+            this.start();
+                let resetBirdDataChecked=this.state.birdData.map ((element) => {
+                    { return {...element, checked: false }
+                    } } );
+                this.setState({birdData: resetBirdDataChecked});
+        } };
 
+    makeAnswer = (id) => {
+        this.setState({userAnswer:id}, this.checkAnswer);
+        let birdDataNew=this.state.birdData.map ((element, index) => {
+             if (index == id) {{
+                    return {...element, checked: true }
+                }} else { return element }} );
+        this.setState({birdData: birdDataNew})  };
 
-    makeAnswer = (e) => {
-        this.setState({userAnswer: e}, this.checkAnswer)
-    };
 
     checkAnswer = () => {
-
         let bonus = 5 - this.state.quantityAnswer;
         if (this.state.randomQuestionNumber == this.state.userAnswer) {
             this.setState({answerStatus: true});
@@ -63,18 +83,11 @@ class App extends React.Component {
 
     render = () => {
 
-        let ArrayBird = birdsData[this.state.numberOfLevel];
-
-
+        // let ArrayBird = birdsData[this.state.numberOfLevel];
 
         return (
-
-
-            <div className="App">
-
-
+                <div className="App">
                 <div className={"mainWrapper"}>
-
                 <div>
                         <Header
                             numberOfLevel={this.state.numberOfLevel}
@@ -93,7 +106,7 @@ class App extends React.Component {
 
                 <div className="answerAndDescr">
                     <AnswerBlock
-                        ArrayBird={ArrayBird}
+                        ArrayBird={this.state.birdData}
                         makeAnswer={this.makeAnswer}
                         userAnswer={this.state.userAnswer}
                         answerStatus={this.state.answerStatus}
@@ -102,17 +115,18 @@ class App extends React.Component {
                     {(this.state.userAnswer) ?
                         <DescriptionBlock
                             arrayBird={birdsData[this.state.numberOfLevel][this.state.userAnswer]}
+                            audioBird={birdsData[this.state.numberOfLevel][this.state.userAnswer].audio}
                         />
                         :
                         <EmptyDescriptionBlock/>}
                 </div>
 
-
-
-                <button className={"nextLevelButton"} onClick={this.nextLevel} >next level</button>
+                <button className={!this.state.answerStatus ? "nextLevelButtonDisabled" : "nextLevelButtonEnabled" } onClick={this.nextLevel} disabled={!this.state.answerStatus} >next level</button>
 
                 </div>
             </div>
+
+
         );
     }
 }
