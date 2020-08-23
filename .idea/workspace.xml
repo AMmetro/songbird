@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d1d7f20c-e5a2-4dd9-ab7a-3d6b21c66775" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Common/AnswerBlock/AnswerBlock.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Common/AnswerBlock/AnswerBlock.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Common/AnswerBlock/img/bird.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Common/DescriptionBlock/DescriptionBlock.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Common/DescriptionBlock/DescriptionBlock.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Common/DescriptionBlock/EmptyDescriptionBlock.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Common/DescriptionBlock/img/bird.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Common/Header/Header.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Common/Header/Header.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Common/Question/QuestionBlock.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Common/Question/QuestionBlock.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Common/birdsData/birdsData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="songbird" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1fK327YKbQPrn9ZVk0fIYqU615J" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Front\rs\songbird\src\Common\Question" />
+      <recent name="D:\Front\rs\songbird\src\Common\DescriptionBlock" />
+      <recent name="D:\MY\Web Dev\Study\RS school\Projects\songbird\src\Common" />
+      <recent name="D:\MY\Web Dev\Study\RS school\Projects\songbird\src\Common\Header" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\MY\Web Dev\Study\RS school\Projects\songbird\src\Common" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.npm start">
+    <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="npm start" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\win10\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d1d7f20c-e5a2-4dd9-ab7a-3d6b21c66775" name="Default Changelist" comment="" />
+      <created>1595952746422</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1595952746422</updated>
+      <workItem from="1595952748624" duration="11022000" />
+      <workItem from="1596033151382" duration="738000" />
+      <workItem from="1596037492414" duration="4390000" />
+      <workItem from="1596042701309" duration="542000" />
+      <workItem from="1596049113612" duration="6824000" />
+      <workItem from="1596137732604" duration="6926000" />
+      <workItem from="1596222256579" duration="1299000" />
+      <workItem from="1596224674019" duration="5244000" />
+      <workItem from="1596261212746" duration="534000" />
+      <workItem from="1596261791991" duration="83000" />
+      <workItem from="1596261970522" duration="5623000" />
+      <workItem from="1596289888616" duration="623000" />
+      <workItem from="1596290710138" duration="15793000" />
+      <workItem from="1596357451431" duration="5923000" />
+      <workItem from="1596367672105" duration="6648000" />
+      <workItem from="1596387983987" duration="6955000" />
+      <workItem from="1596480347200" duration="4069000" />
+      <workItem from="1596572403859" duration="1722000" />
+      <workItem from="1596653980666" duration="600000" />
+      <workItem from="1596655838018" duration="4671000" />
+      <workItem from="1596724576153" duration="649000" />
+      <workItem from="1596735583577" duration="1282000" />
+      <workItem from="1596738789625" duration="6353000" />
+      <workItem from="1596826334673" duration="4495000" />
+      <workItem from="1596866363117" duration="10149000" />
+      <workItem from="1596900633528" duration="2370000" />
+      <workItem from="1596903723567" duration="4693000" />
+      <workItem from="1597003313999" duration="2642000" />
+      <workItem from="1597085166466" duration="1282000" />
+      <workItem from="1597169824881" duration="4073000" />
+      <workItem from="1597248313424" duration="3076000" />
+      <workItem from="1597341063310" duration="5231000" />
+      <workItem from="1597415704320" duration="15857000" />
+      <workItem from="1597467667484" duration="357000" />
+      <workItem from="1597502285287" duration="3461000" />
+      <workItem from="1597555453206" duration="13594000" />
+      <workItem from="1597582808504" duration="3667000" />
+      <workItem from="1597602715488" duration="7982000" />
+      <workItem from="1597693138562" duration="4095000" />
+      <workItem from="1597777299341" duration="3402000" />
+      <workItem from="1597855164256" duration="9488000" />
+      <workItem from="1597940642825" duration="13420000" />
+      <workItem from="1598036143216" duration="2881000" />
+      <workItem from="1598075621557" duration="7677000" />
+      <workItem from="1598112382476" duration="2244000" />
+      <workItem from="1598119015136" duration="8738000" />
+      <workItem from="1598172122196" duration="3460000" />
+      <workItem from="1598191938027" duration="2682000" />
+      <workItem from="1598211614716" duration="649000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/../../incubator/Todo list/src/Store.js" />
+      </list>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="734" y="324" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1595955448523">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="734" y="324" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595955448523" />
+    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1598077712989">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1598077712989" />
+    <state x="722" y="364" key="AbstractVcsHelper.FilterDialog.org.jetbrains.idea.svn.history.SvnVersionFilterComponent" timestamp="1598212149743">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="722" y="364" key="AbstractVcsHelper.FilterDialog.org.jetbrains.idea.svn.history.SvnVersionFilterComponent/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1598212149743" />
+    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1598212263089">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1598212263089" />
+    <state x="842" y="414" width="260" height="211" key="Github.ShareDialog" timestamp="1598211806983">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="842" y="414" width="260" height="211" key="Github.ShareDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1598211806983" />
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1598177443314">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1598177443314" />
+    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1598177443314">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1598177443314" />
+    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1598177443313">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1598177443313" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1598177443314">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1598177443314" />
+    <state x="656" y="252" width="607" height="536" key="find.popup" timestamp="1598176675636">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="252" width="607" height="536" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1598176675636" />
+    <state x="765" y="385" width="453" height="269" key="git4idea.rebase.GitRebaseDialog" timestamp="1598211996507">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="385" width="453" height="269" key="git4idea.rebase.GitRebaseDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1598211996507" />
+    <state x="797" y="150" key="svn4idea.diff.options" timestamp="1598211930706">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="797" y="150" key="svn4idea.diff.options/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1598211930706" />
+  </component>
+</project>
