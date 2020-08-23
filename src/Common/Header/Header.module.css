@@ -1,0 +1,42 @@
+
+.header {
+  width: 800px;
+  background-color: black;
+}
+
+.logo {
+  width: 180px;
+  max-width: 7em; /* блок занимает ширину родителя, max-width её ограничивает */
+  margin-left: 10%;
+  min-height: 3em;
+  margin-right: 20em;
+  }
+
+.score {
+  margin-left: 15%;
+  color: white;
+}
+
+.questionList li {
+  display:inline-block;
+  margin: 0px;
+  padding: 10px;
+  text-align: center;
+}
+
+.passive {
+  color: yellow;
+  background-color: green;
+}
+
+.active {
+  color: white;
+  background-color: red;
+}
+
+
+
+
+
+
+
