@@ -1,20 +1,41 @@
 
 
+.App{
+   background-color: black;
+   position: relative;
+   height: 600px;
+}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mainWrapper{
+    position: relative;
+    background-color: black;
+    width: 800px;
+    height: 500px;
+    top: 1%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -1%)
+}
+
+.answerAndDescr {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.nextLevelButtonEnabled {
+  margin-left: 5%;
+    width: 730px;
+  background-color: darkgreen;
   color: white;
 }
 
-.ansAndDescr {
-  display: flex;
-}
+.nextLevelButtonDisabled {
+  margin-left: 5%;
+    width: 730px;
+  background-color: grey;
+  color: gray();
+  cursor: not-allowed;
+ }
+
 
 
 
