@@ -1,0 +1,41 @@
+
+
+.App{
+   background-color: black;
+   position: relative;
+   height: 600px;
+}
+
+.mainWrapper{
+    position: relative;
+    background-color: black;
+    width: 800px;
+    height: 500px;
+    top: 1%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -1%)
+}
+
+.answerAndDescr {
+  display: flex;
+}
+
+.nextLevelButtonEnabled {
+  margin-left: 5%;
+    width: 730px;
+  background-color: darkgreen;
+  color: white;
+}
+
+.nextLevelButtonDisabled {
+  margin-left: 5%;
+    width: 730px;
+  background-color: grey;
+  color: gray();
+  cursor: not-allowed;
+ }
+
+
+
+

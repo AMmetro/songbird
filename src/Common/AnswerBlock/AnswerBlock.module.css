@@ -1,0 +1,39 @@
+
+
+.answer {
+ margin: 5px;
+ background-color: green;
+ margin-left: 5%;
+    width: 15%;
+    height: 190px;
+}
+
+.answerList {
+  background-color: yellowgreen;
+}
+
+.passive {
+    color: white;
+}
+.negative {
+    color: red;
+}
+
+.active {
+    color: red;
+}
+
+.positive {
+    color: yellowgreen;
+    /*background: blueviolet;*/
+
+}
+
+
+
+
+
+
+
+
+
