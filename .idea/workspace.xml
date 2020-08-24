@@ -2,23 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1d7f20c-e5a2-4dd9-ab7a-3d6b21c66775" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Common/AnswerBlock/AnswerBlock.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Common/AnswerBlock/AnswerBlock.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Common/AnswerBlock/img/bird.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Common/DescriptionBlock/DescriptionBlock.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Common/DescriptionBlock/DescriptionBlock.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Common/DescriptionBlock/EmptyDescriptionBlock.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Common/DescriptionBlock/img/bird.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Common/Header/Header.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Common/Header/Header.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Common/Question/QuestionBlock.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Common/Question/QuestionBlock.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Common/birdsData/birdsData.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Common/AnswerBlock/AnswerBlock.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Common/AnswerBlock/AnswerBlock.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,6 +152,7 @@
       <workItem from="1598119015136" duration="8738000" />
       <workItem from="1598172122196" duration="3460000" />
       <workItem from="1598191938027" duration="2682000" />
+      <workItem from="1598290001893" duration="1943000" />
     </task>
     <servers />
   </component>

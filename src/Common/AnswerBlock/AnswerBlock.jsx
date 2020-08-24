@@ -5,8 +5,7 @@ class AnswerBlock extends React.Component {
 
     makeAnswer=(e)=> {
         this.props.makeAnswer(e.currentTarget.id)
-           // function (id)
-         };
+            };
 
 
 
@@ -22,8 +21,7 @@ class AnswerBlock extends React.Component {
                              checked={element.checked}
                              id={index}
                              onChange={this.makeAnswer}
-                             // onChange={()=>this.makeAnswer(element.id)}
-                         />
+                                />
                          <span className={ element.checked ?
                              (index==this.props.randomQuestionNumber ? styles.positive : styles.negative)
                              : styles.passive }>
