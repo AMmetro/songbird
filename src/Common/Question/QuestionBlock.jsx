@@ -23,8 +23,8 @@ class QuestionBlock extends React.Component {
                     {answerStatus ? <div className={styles.enigma}>{this.props.nameBird}</div>:<div className={styles.enigma}>*******</div>}
                         <hr/>
 
-                    <audio controls="controls" className={styles.player}>
-                        <source src={this.props.audioBird} />
+                    <audio controls="controls" className={styles.player}
+                        src={this.props.audioBird}>
                     </audio>
 
                 </div>

@@ -19,10 +19,12 @@ class DescriptionBlock extends React.Component {
 
                 <div className={styles.myPlayer}>
 
-                    <audio controls="controls" className={styles.player}>
-                        <source src={this.props.audioBird} />
+                    <audio controls="controls" className={styles.player}
+                        src={this.props.audioBird}>
                     </audio>
-                    {/*<MyPlayer songLink={this.props.audioBird}/> */}
+
+
+
                 </div>
 
                 <div className={styles.description}> {this.props.arrayBird.description} </div>
