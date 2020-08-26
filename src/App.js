@@ -48,7 +48,7 @@ class App extends React.Component {
 
     nextLevel = () => {
         if (this.state.numberOfLevel >= birdsData.length - 1) {
-            if (this.state.score > 5) {alert("Поздравляем вы набрали 30 баллов, ответили на все вопросы!!!");}
+            if (this.state.score > 29) {alert("Поздравляем вы набрали 30 баллов, ответили на все вопросы!!!");}
             this.setState({answerStatus: true});
         } else {
             this.setState({numberOfLevel: this.state.numberOfLevel + 1}, this.start);
