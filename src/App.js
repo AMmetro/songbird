@@ -19,6 +19,7 @@ class App extends React.Component {
         userAnswer: null,
         answerStatus: false,
         gameOver: false,
+        superCongratulations: false,
         birdData:[]
     };
 
@@ -48,8 +49,11 @@ class App extends React.Component {
 
     nextLevel = () => {
         if (this.state.numberOfLevel >= birdsData.length - 1) {
-            if (this.state.score > 29) {alert("Поздравляем вы набрали 30 баллов, ответили на все вопросы!!!");}
             this.setState({answerStatus: true});
+            this.setState({gameOver: true});
+            if (this.state.score>29) {
+                this.setState({superCongratulations: true})
+            }
         } else {
             this.setState({numberOfLevel: this.state.numberOfLevel + 1}, this.start);
             this.setState({quantityAnswer: 0});
@@ -59,8 +63,18 @@ class App extends React.Component {
                     { return {...element, checked: false }
                     } } );
                 this.setState({birdData: resetBirdDataChecked});
-
         } };
+
+    gameAgain = () => {
+        this.setState({numberOfLevel: 0});
+        this.setState({quantityAnswer: 0});
+        this.setState({userAnswer: null});
+        this.setState({gameOver: false});
+        this.setState({score: 0});
+        this.setState({randomQuestionNumber: 0});
+        this.setState({answerStatus: false});
+        this.start();
+}
 
     makeAnswer = (id) => {
         this.setState({userAnswer:id}, this.checkAnswer);
@@ -87,59 +101,71 @@ class App extends React.Component {
     render = () => {
 
         return (
-                <div className="App">
+            <div className="App">
                 <div className={"mainWrapper"}>
-                <div>
-
-                    <audio src={soundPositive} ref={ref => (this.player1 = ref)} ></audio>
-                    <audio src={soundNegative} ref={ref => (this.player2 = ref)} ></audio>
-
-                        <Header
-                            numberOfLevel={this.state.numberOfLevel}
-                            score={this.state.score}                 />
-                </div>
-
-                <div>
-                        <QuestionBlock
-                            answerStatus={this.state.answerStatus}
-                            nameBird={birdsData[this.state.numberOfLevel][this.state.randomQuestionNumber].name}
-                            imgBird={birdsData[this.state.numberOfLevel][this.state.randomQuestionNumber].image}
-                            audioBird={birdsData[this.state.numberOfLevel][this.state.randomQuestionNumber].audio}
-                        />
-                 </div>
+                    <div>
+                        <audio src={soundPositive} ref={ref => (this.player1 = ref)} ></audio>
+                        <audio src={soundNegative} ref={ref => (this.player2 = ref)} ></audio>
+                            <Header
+                                numberOfLevel={this.state.numberOfLevel}
+                                score={this.state.score}                 />
+                    </div>
 
 
-                <div className="answerAndDescr">
-                    <AnswerBlock
-                        ArrayBird={this.state.birdData}
-                        makeAnswer={this.makeAnswer}
-                        userAnswer={this.state.userAnswer}
-                        answerStatus={this.state.answerStatus}
-                        randomQuestionNumber = {this.state.randomQuestionNumber}
-                      />
+                    { this.state.gameOver==false
+                        ?<div>
+                            <div>
+                                <QuestionBlock
+                                answerStatus={this.state.answerStatus}
+                                nameBird={birdsData[this.state.numberOfLevel][this.state.randomQuestionNumber].name}
+                                imgBird={birdsData[this.state.numberOfLevel][this.state.randomQuestionNumber].image}
+                                audioBird={birdsData[this.state.numberOfLevel][this.state.randomQuestionNumber].audio}
+                                             />
+                           </div>
+                           <div className="answerAndDescr">
+                               <AnswerBlock
+                                ArrayBird={this.state.birdData}
+                                makeAnswer={this.makeAnswer}
+                                userAnswer={this.state.userAnswer}
+                                answerStatus={this.state.answerStatus}
+                                randomQuestionNumber = {this.state.randomQuestionNumber}
+                                          />
+                               {(this.state.userAnswer)
+                                   ? <DescriptionBlock
+                                     arrayBird={birdsData[this.state.numberOfLevel][this.state.userAnswer]}
+                                     audioBird={birdsData[this.state.numberOfLevel][this.state.userAnswer].audio}
+                                         />
+                                   : <EmptyDescriptionBlock/>}
+                           </div>
+                         </div>
+                        :<div>
+                            {this.state.score > 29
+                                ?   <div className="congratulations">
+                                      <div> <h1>СУПЕР ПОЗДРАВЛЕНИЯ!</h1>
+                                      <div>Вы прошли викторину и набрали 30 из 30 возможных баллов !!!! </div>
+                                    </div>
+                                 </div>
+                                :   <div className="congratulations">
+                                      <div> <h1>Поздравляем!</h1>
+                                         <div>Вы прошли викторину и набрали {this.state.score} из 30 возможных баллов </div>
+                                      </div>
+                                   </div>
+                            }
+                       </div>
+                    }
 
-                    {(this.state.userAnswer) ?
-                        <DescriptionBlock
-                            arrayBird={birdsData[this.state.numberOfLevel][this.state.userAnswer]}
-                            audioBird={birdsData[this.state.numberOfLevel][this.state.userAnswer].audio}
-                        />
-                        :
-                        <EmptyDescriptionBlock/>}
-                </div>
-
-
-                    {  (this.state.answerStatus==true
-                        && this.state.numberOfLevel == 5) ?
-                                                           <button className={"nextLevelButtonEnabled"}
-                                                           onClick={this.nextLevel}>
-                                                           Поздравляем! Вы прошли викторину и набрали
-                                                           {this.state.score} из 30 возможных баллов </button>
-                                                           :
-                                                           <button className={!this.state.answerStatus ?
-                                                           "nextLevelButtonDisabled" : "nextLevelButtonEnabled" }
-                                                           onClick={this.nextLevel}
-                                                           disabled={!this.state.answerStatus}>
-                                                           next level</button>}
+                    {(this.state.gameOver == true
+                        && this.state.numberOfLevel == 5)
+                        ?     <button className={"nextLevelButtonEnabled"}
+                                onClick={this.gameAgain}>
+                                Начать игру сначала
+                               </button>
+                        :      <button className={!this.state.answerStatus ?
+                               "nextLevelButtonDisabled" : "nextLevelButtonEnabled"}
+                                onClick={this.nextLevel}
+                                disabled={!this.state.answerStatus}>
+                               next level</button>
+                    }
                 </div>
             </div>
 

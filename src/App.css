@@ -36,6 +36,12 @@
   cursor: not-allowed;
  }
 
+.congratulations {
+    position: relative;
+    left: 30%;
+    color: white;
+}
+
 
 
 

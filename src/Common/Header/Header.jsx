@@ -5,39 +5,20 @@ import styles from './Header.module.css';
 class Header extends React.Component {
 
 
-    state = {
-        filterCss0: "active",
-        filterCss1: "passive",
-        filterCss2: "passive",
-        filterCss3: "passive",
-        filterCss4: "passive",
-        filterCss5: "passive",
-    };
+    levelQuestion = [
+        { id:1, name: "Разминка"},
+        { id:2, name: "Воробьиные"},
+        { id:3, name: "Певчие птицы"},
+        { id:4, name: "Лесные птицы"},
+        { id:5, name: "Хищные птицы"},
+        { id:6, name: "Морские птицы"},
+];
 
-
-     checkIteration=0;
     render = () => {
 
-        if (this.props.numberOfLevel==1 && this.checkIteration==0) {
-            this.setState({filterCss1: "active", filterCss0:"passive"})
-            this.checkIteration=this.checkIteration+1
-        }
-        else if (this.props.numberOfLevel==2 && this.checkIteration==1) {
-            this.setState({filterCss2: "active", filterCss1:"passive"})
-            this.checkIteration=this.checkIteration+1
-        }
-        else if (this.props.numberOfLevel==3 && this.checkIteration==2) {
-            this.setState({filterCss3: "active", filterCss2:"passive"})
-            this.checkIteration=this.checkIteration+1
-        }
-        else if (this.props.numberOfLevel==4 && this.checkIteration==3) {
-            this.setState({filterCss4: "active", filterCss3:"passive"})
-            this.checkIteration=this.checkIteration+1
-        }
-        else if (this.props.numberOfLevel==5 && this.checkIteration==4) {
-            this.setState({filterCss5: "active", filterCss4:"passive"})
-            this.checkIteration=this.checkIteration+1
-        }
+        let  arrayLevelQuestion = this.levelQuestion.map((mapin, ind) =>
+            <li className={ ind == this.props.numberOfLevel ? styles.active : styles.passive}> {mapin.name} </li>
+        );
 
 
         return (
@@ -48,13 +29,7 @@ class Header extends React.Component {
                 <span className={styles.score}>  Score={this.props.score} </span>
 
                         <ul className={styles.questionList}>
-                            <li className={styles[this.state.filterCss0] }>Разминка</li>
-                            <li className={styles[this.state.filterCss1] }>Воробьиные</li>
-                            <li className={styles[this.state.filterCss2] }>Певчие птицы</li>
-                            <li className={styles[this.state.filterCss3] }>Лесные птицы</li>
-                            <li className={styles[this.state.filterCss4] }>Хищные птицы</li>
-                            <li className={styles[this.state.filterCss5] }>Морские птицы</li>
-
+                            {arrayLevelQuestion}
                         </ul>
 
                  </div>
