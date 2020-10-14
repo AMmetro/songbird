@@ -33,7 +33,6 @@ class App extends React.Component {
 
     componentDidMount() {
         this.start();
-
          }
 
     start = () => {
